@@ -12,7 +12,7 @@
 - 📂 **Gestion documentaire** : Prenez en photo vos factures et documents officiels pour les lier à vos événements.
 - 🌍 **Obligations locales** : L'application configure automatiquement les échéances légales (contrôle technique, taxes) en fonction de votre pays.
 - 📄 **Export PDF Professionnel** : Générez un dossier complet (rapport de synthèse + documents bruts) pour la revente ou le suivi personnel.
-- 🔐 **Vie privée & Sécurité** : Vos données restent exclusivement sur votre téléphone. Import/Export facile via fichier ZIP sécurisé.
+- 🔐 **Vie privée & Sécurité** : Vos données restent exclusivement sur votre téléphone. Zip Import/Export.
 
 ---
 
