@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jurisdictions>
+    <!-- EUROPE -->
+    <country code="AL" fr="Albanie" en="Albania">
+        <obligation id="al_ins" fr="Assurance (Sigurimi)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="al_tax" fr="Taxe annuelle" en="Annual Tax" es="Impuesto anual" de="Jährliche Steuer" it="Tassa annuale" pt="Imposto anual" />
+        <obligation id="al_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="al_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção técnica" />
+        <obligation id="al_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="DE" fr="Allemagne" en="Germany">
+        <obligation id="de_au" fr="Contrôle pollution (AU)" en="Emissions Test (AU)" es="Prueba de emisiones" de="Abgasuntersuchung (AU)" it="Controllo emissioni" pt="Teste de emissões" />
+        <obligation id="de_ins" fr="Assurance (Versicherung)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="de_tuv" fr="Contrôle technique (TÜV/HU)" en="Technical Inspection (TÜV/HU)" es="Inspección técnica" de="Hauptuntersuchung (TÜV/HU)" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="de_reins" fr="Nachprüfung (Contre-visite)" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="de_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="AT" fr="Autriche" en="Austria">
+        <obligation id="at_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="at_pick" fr="Contrôle technique (Pickerl)" en="Technical Inspection (Pickerl)" es="Inspección técnica" de="Pickerl (Begutachtung)" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="at_vign" fr="Vignette autoroutière" en="Highway Vignette" es="Viñeta" de="Autobahn-Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="at_reins" fr="Nachprüfung (Contre-visite)" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="at_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="BE" fr="Belgique" en="Belgium">
+        <obligation id="be_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="be_tax" fr="Taxe de circulation" en="Road Tax" es="Impuesto de circulación" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto de circulação" />
+        <obligation id="be_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="be_reins" fr="Re-contrôle / Herkeuring" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="be_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="BG" fr="Bulgarie" en="Bulgaria">
+        <obligation id="bg_ins" fr="Assurance (Grazhdanska)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="bg_tax" fr="Taxe routière" en="Road Tax" es="Impuesto sobre el uso de carreteras" de="Straßennutzungsgebühr" it="Tassa stradale" pt="Imposto rodoviário" />
+        <obligation id="bg_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="bg_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="bg_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CY" fr="Chypre" en="Cyprus">
+        <obligation id="cy_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="cy_mot" fr="Contrôle technique (MOT)" en="MOT Test" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="cy_tax" fr="Taxe de circulation" en="Road Tax" es="Impuesto de circulación" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto de circulação" />
+        <obligation id="cy_reins" fr="Contre-visite MOT" en="MOT Re-test" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="cy_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="HR" fr="Croatie" en="Croatia">
+        <obligation id="hr_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="hr_reg" fr="Immatriculation annuelle" en="Annual Registration" es="Registro anual" de="Jährliche Zulassung" it="Immatricolazione annuale" pt="Registo anual" />
+        <obligation id="hr_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="hr_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="hr_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="DK" fr="Danemark" en="Denmark">
+        <obligation id="dk_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="dk_tax" fr="Taxe environnementale" en="Green Tax" es="Impuesto ambiental" de="Umweltsteuer" it="Tassa ambientale" pt="Imposto ambiental" />
+        <obligation id="dk_tech" fr="Contrôle technique (Syn)" en="Technical Inspection (Syn)" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="dk_reins" fr="Omsyn (Contre-visite)" en="Re-inspection (Omsyn)" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="dk_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="ES" fr="Espagne" en="Spain">
+        <obligation id="es_ins" fr="Assurance (Seguro)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="es_itv" fr="Contrôle technique (ITV)" en="Technical Inspection (ITV)" es="Inspección técnica (ITV)" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica (ITV)" />
+        <obligation id="es_tax" fr="Taxe circulation (IVTM)" en="Road Tax (IVTM)" es="Impuesto de circulación (IVTM)" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto de circulação" />
+        <obligation id="es_reins" fr="Segunda inspección (ITV)" en="Re-inspection (ITV)" es="Segunda inspección (ITV)" de="Nachprüfung" it="Ripetizione" pt="Reinspeção (ITV)" />
+        <obligation id="es_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="EE" fr="Estonie" en="Estonia">
+        <obligation id="ee_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ee_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ee_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ee_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="FI" fr="Finlande" en="Finland">
+        <obligation id="fi_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="fi_tax" fr="Taxe véhicule" en="Vehicle Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa veicolo" pt="Imposto de veículo" />
+        <obligation id="fi_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="fi_reins" fr="Jälkitarkastus (Contre-visite)" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="fi_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="FR" fr="France" en="France">
+        <obligation id="fr_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="fr_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="fr_reins" fr="Contre-visite CT" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="fr_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="GR" fr="Grèce" en="Greece">
+        <obligation id="gr_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="gr_kteo" fr="Contrôle technique (KTEO)" en="Technical Inspection (KTEO)" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="gr_tax" fr="Taxe de circulation" en="Road Tax" es="Impuesto de circulación" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto de circulação" />
+        <obligation id="gr_reins" fr="Re-contrôle KTEO" en="KTEO Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="gr_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="HU" fr="Hongrie" en="Hungary">
+        <obligation id="hu_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="hu_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="hu_vign" fr="Vignette (E-Matrica)" en="Vignette" es="Viñeta" de="E-Matrica" it="Vignetta" pt="Vinheta" />
+        <obligation id="hu_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="hu_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="IE" fr="Irlande" en="Ireland">
+        <obligation id="ie_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ie_nct" fr="Contrôle technique (NCT)" en="Technical Inspection (NCT)" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ie_tax" fr="Taxe moteur" en="Motor Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa automobilistica" pt="Imposto automóvel" />
+        <obligation id="ie_reins" fr="Contre-visite NCT" en="NCT Re-test" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ie_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="IS" fr="Islande" en="Iceland">
+        <obligation id="is_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="is_tax" fr="Taxe véhicule" en="Vehicle Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa veicolo" pt="Imposto de veículo" />
+        <obligation id="is_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="is_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="is_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="IT" fr="Italie" en="Italy">
+        <obligation id="it_ins" fr="Assurance (Assicurazione)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="it_rev" fr="Contrôle technique (Revisione)" en="Technical Inspection (Revisione)" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="it_tax" fr="Taxe (Bollo Auto)" en="Ownership Tax (Bollo)" es="Impuesto de vehículos" de="Kfz-Steuer" it="Bollo Auto" pt="Imposto automóvel" />
+        <obligation id="it_reins" fr="Ripetizione (Contre-visite)" en="Re-inspection (Ripetizione)" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="it_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="LV" fr="Lettonie" en="Latvia">
+        <obligation id="lv_ins" fr="Assurance (OCTA)" en="Insurance (OCTA)" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="lv_tax" fr="Taxe d'exploitation" en="Usage Tax" es="Impuesto de uso" de="Nutzungssteuer" it="Tassa di utilizzo" pt="Imposto de utilização" />
+        <obligation id="lv_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="lv_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="lv_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="LT" fr="Lituanie" en="Lithuania">
+        <obligation id="lt_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="lt_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="lt_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="lt_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="LU" fr="Luxembourg" en="Luxembourg">
+        <obligation id="lu_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="lu_tax" fr="Taxe sur véhicule" en="Vehicle Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa veicolo" pt="Imposto de veículo" />
+        <obligation id="lu_tech" fr="Contrôle technique (SNCT)" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="lu_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="lu_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="MT" fr="Malte" en="Malta">
+        <obligation id="mt_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="mt_tax" fr="Licence annuelle (VRT)" en="Annual License (VRT)" es="Licencia anual" de="Jährliche Zulassung" it="Licenza annuale" pt="Licença anual" />
+        <obligation id="mt_reins" fr="Contre-visite VRT" en="VRT Re-test" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="mt_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="MC" fr="Monaco" en="Monaco">
+        <obligation id="mc_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="mc_stamp" fr="Estampille annuelle" en="Annual Car Stamp" es="Sello anual" de="Jahresmarke" it="Bollo annuale" pt="Selo anual" />
+        <obligation id="mc_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="mc_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="mc_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="NO" fr="Norvège" en="Norway">
+        <obligation id="no_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="no_tax" fr="Taxe routière" en="Road Tax" es="Impuesto de circulación" de="Straßennutzungsgebühr" it="Tassa stradale" pt="Imposto rodoviário" />
+        <obligation id="no_tech" fr="Contrôle technique (EU-kontroll)" en="Technical Inspection (EU)" es="Inspección técnica" de="EU-kontroll" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="no_reins" fr="Etterkontroll (Contre-visite)" en="Re-inspection (Etterkontroll)" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="no_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="NL" fr="Pays-Bas" en="Netherlands">
+        <obligation id="nl_apk" fr="Contrôle technique (APK)" en="Technical Inspection (APK)" es="Inspección técnica" de="APK" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="nl_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="nl_tax" fr="Taxe moteur (MRB)" en="Motor Vehicle Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa automobilistica" pt="Imposto automóvel" />
+        <obligation id="nl_reins" fr="Herkeuring (Contre-visite)" en="Re-inspection (Herkeuring)" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="nl_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="PL" fr="Pologne" en="Poland">
+        <obligation id="pl_ins" fr="Assurance (OC)" en="Insurance (OC)" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="pl_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="pl_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="pl_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="PT" fr="Portugal" en="Portugal">
+        <obligation id="pt_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="pt_ipo" fr="Contrôle technique (IPO)" en="Technical Inspection (IPO)" es="Inspección técnica" de="IPO" it="Revisione" pt="Inspeção periódica (IPO)" />
+        <obligation id="pt_iuc" fr="Taxe (IUC)" en="Annual Tax (IUC)" es="Impuesto anual" de="IUC" it="Tassa annuale" pt="Imposto único de circulação (IUC)" />
+        <obligation id="pt_reins" fr="Reinspecção (Contre-visite)" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="pt_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CZ" fr="République Tchèque" en="Czech Republic">
+        <obligation id="cz_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="cz_stk" fr="Contrôle technique (STK)" en="Technical Inspection (STK)" es="Inspección técnica" de="STK" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="cz_vign" fr="Vignette autoroutière" en="Highway Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="cz_reins" fr="Opakovaná prohlídka" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="cz_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="RO" fr="Roumanie" en="Romania">
+        <obligation id="ro_ins" fr="Assurance (RCA)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ro_itp" fr="Contrôle technique (ITP)" en="Technical Inspection" es="Inspección técnica" de="ITP" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ro_vign" fr="Vignette (Rovinieta)" en="Road Vignette" es="Viñeta" de="Rovinieta" it="Vignetta" pt="Vinheta" />
+        <obligation id="ro_reins" fr="Re-verificare ITP" en="ITP Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ro_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="GB" fr="Royaume-Uni" en="United Kingdom">
+        <obligation id="gb_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="gb_mot" fr="Contrôle technique (MOT)" en="MOT Test" es="Inspección técnica" de="MOT" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="gb_tax" fr="Taxe circulation (Road Tax)" en="Road Tax" es="Impuesto de circulación" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto de circulação" />
+        <obligation id="gb_reins" fr="Contre-visite MOT" en="MOT Re-test" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="gb_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="RU" fr="Russie" en="Russia">
+        <obligation id="ru_ins" fr="Assurance (OSAGO)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ru_tax" fr="Taxe transport" en="Transport Tax" es="Impuesto de transporte" de="Transportsteuer" it="Tassa sui trasporti" pt="Imposto de transporte" />
+        <obligation id="ru_tech" fr="Contrôle technique (TO)" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ru_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ru_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="SK" fr="Slovaquie" en="Slovakia">
+        <obligation id="sk_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="sk_stk" fr="Contrôle technique (STK)" en="Technical Inspection" es="Inspección técnica" de="STK" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="sk_vign" fr="Vignette autoroutière" en="Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="sk_reins" fr="Opakovaná kontrola" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="sk_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="SI" fr="Slovénie" en="Slovenia">
+        <obligation id="si_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="si_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="si_vign" fr="Vignette autoroutière" en="Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="si_reins" fr="Ponovni pregled" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="si_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="SE" fr="Suède" en="Sweden">
+        <obligation id="se_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="se_tax" fr="Taxe véhicule" en="Vehicle Tax" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa veicolo" pt="Imposto de veículo" />
+        <obligation id="se_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="se_reins" fr="Efterkontroll" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="se_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CH" fr="Suisse" en="Switzerland">
+        <obligation id="ch_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ch_tech" fr="Contrôle technique (MFK)" en="Technical Inspection" es="Inspección técnica" de="MFK" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ch_vign" fr="Vignette autoroutière" en="Highway Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="ch_reins" fr="Re-contrôle / Nachprüfung" en="Re-inspection / Nachprüfung" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ch_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="UA" fr="Ukraine" en="Ukraine">
+        <obligation id="ua_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ua_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ua_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ua_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+
+    <!-- AMÉRIQUE DU NORD -->
+    <country code="CA" fr="Canada" en="Canada">
+        <obligation id="ca_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ca_reg" fr="Immatriculation (Plate)" en="Plate Registration" es="Registro" de="Zulassung" it="Immatricolazione" pt="Registo" />
+        <obligation id="ca_tech" fr="Inspection de sécurité" en="Safety Inspection" es="Inspección de seguridad" de="Sicherheitsüberprüfung" it="Ispezione di sicurezza" pt="Inspeção de segurança" />
+        <obligation id="ca_emis" fr="Test antipollution" en="Emissions Test" es="Prueba de emisiones" de="Abgasuntersuchung" it="Controllo emissioni" pt="Teste de emissões" />
+        <obligation id="ca_reins" fr="Re-inspection technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ca_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="US" fr="États-Unis" en="United States">
+        <obligation id="us_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="us_reg" fr="Renouvellement immat. (Tags)" en="Registration Renewal" es="Renovación de registro" de="Verlängerung der Zulassung" it="Rinnovo immatricolazione" pt="Renovação de registo" />
+        <obligation id="us_tech" fr="Inspection de sécurité" en="Safety Inspection" es="Inspección de seguridad" de="Sicherheitsüberprüfung" it="Ispezione di sicurezza" pt="Inspeção de segurança" />
+        <obligation id="us_emis" fr="Test antipollution" en="Emissions Inspection" es="Prueba de emisiones" de="Abgasuntersuchung" it="Controllo emissioni" pt="Teste de emissões" />
+        <obligation id="us_prop" fr="Taxe de propriété" en="Personal Property Tax" es="Impuesto sobre la propiedad" de="Vermögenssteuer" it="Tassa di proprietà" pt="Imposto de propriedade" />
+        <obligation id="us_reins" fr="Re-inspection technique" en="Safety Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="us_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="MX" fr="Mexique" en="Mexico">
+        <obligation id="mx_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="mx_ver" fr="Vérification pollution" en="Emissions Verification" es="Verificación de emisiones" de="Abgasuntersuchung" it="Controllo emissioni" pt="Verificação de emissões" />
+        <obligation id="mx_ten" fr="Taxe (Tenencia)" en="Vehicle Tax (Tenencia)" es="Tenencia" de="Kfz-Steuer" it="Tassa veicolo" pt="Tenência" />
+        <obligation id="mx_reins" fr="Re-vérification" en="Re-verification" es="Reverificación" de="Nachprüfung" it="Ripetizione" pt="Reverificação" />
+        <obligation id="mx_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+
+    <!-- AMÉRIQUE DU SUD -->
+    <country code="AR" fr="Argentine" en="Argentina">
+        <obligation id="ar_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ar_vtv" fr="Contrôle technique (VTV)" en="Technical Inspection (VTV)" es="Inspección técnica (VTV)" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica (VTV)" />
+        <obligation id="ar_reins" fr="Re-inspection VTV" en="VTV Re-inspection" es="Reinspección VTV" de="Nachprüfung" it="Ripetizione" pt="Reinspeção VTV" />
+        <obligation id="ar_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="BR" fr="Brésil" en="Brazil">
+        <obligation id="br_ins" fr="Assurance (DPVAT)" en="Insurance (DPVAT)" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro (DPVAT)" />
+        <obligation id="br_ipva" fr="Taxe (IPVA)" en="Annual Tax (IPVA)" es="Impuesto anual" de="IPVA" it="Tassa annuale" pt="Imposto sobre a propriedade de veículos automotores (IPVA)" />
+        <obligation id="br_lic" fr="Licenciement annuel" en="Annual Licensing" es="Licenciamiento anual" de="Jährliche Zulassung" it="Licenza annuale" pt="Licenciamento anual" />
+        <obligation id="br_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CL" fr="Chili" en="Chile">
+        <obligation id="cl_ins" fr="Assurance (SOAP)" en="Insurance (SOAP)" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro (SOAP)" />
+        <obligation id="cl_perm" fr="Permis de circuler" en="Circulation Permit" es="Permiso de circulación" de="Fahrerlaubnis" it="Permesso di circolazione" pt="Permissão de circulação" />
+        <obligation id="cl_rev" fr="Contrôle technique" en="Technical Revision" es="Revisión técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="cl_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="cl_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CO" fr="Colombie" en="Colombia">
+        <obligation id="co_soat" fr="Assurance (SOAT)" en="Insurance (SOAT)" es="Seguro (SOAT)" de="Versicherung" it="Assicurazione" pt="Seguro (SOAT)" />
+        <obligation id="co_tech" fr="Contrôle technique" en="Technical Revision" es="Revisión técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="co_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="co_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="PE" fr="Pérou" en="Peru">
+        <obligation id="pe_soat" fr="Assurance (SOAT)" en="Insurance (SOAT)" es="Seguro (SOAT)" de="Versicherung" it="Assicurazione" pt="Seguro (SOAT)" />
+        <obligation id="pe_rev" fr="Contrôle technique" en="Technical Revision" es="Revisión técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="pe_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="pe_other" fr="Autre" en="Other" es="Others" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+
+    <!-- AFRIQUE -->
+    <country code="DZ" fr="Algérie" en="Algeria">
+        <obligation id="dz_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="dz_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="dz_vign" fr="Vignette automobile" en="Vehicle Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="dz_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="dz_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="CI" fr="Côte d'Ivoire" en="Ivory Coast">
+        <obligation id="ci_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ci_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ci_vign" fr="Vignette" en="Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="ci_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ci_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="EG" fr="Égypte" en="Egypt">
+        <obligation id="eg_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="eg_lic" fr="Licence de véhicule" en="Vehicle License" es="Licencia" de="Fahrzeugschein" it="Licenza" pt="Licença" />
+        <obligation id="eg_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="MA" fr="Maroc" en="Morocco">
+        <obligation id="ma_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ma_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="ma_vign" fr="Vignette annuelle" en="Annual Vignette" es="Viñeta anual" de="Jahresvignette" it="Vignetta annuale" pt="Vinheta anual" />
+        <obligation id="ma_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="ma_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="SN" fr="Sénégal" en="Senegal">
+        <obligation id="sn_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="sn_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="sn_vign" fr="Vignette" en="Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="sn_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="sn_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="TN" fr="Tunisie" en="Tunisia">
+        <obligation id="tn_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="tn_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="tn_vign" fr="Vignette" en="Vignette" es="Viñeta" de="Vignette" it="Vignetta" pt="Vinheta" />
+        <obligation id="tn_reins" fr="Contre-visite technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="tn_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+
+    <!-- ASIE / MOYEN-ORIENT -->
+    <country code="SA" fr="Arabie Saoudite" en="Saudi Arabia">
+        <obligation id="sa_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="sa_tech" fr="Contrôle technique (Fahas)" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="sa_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="sa_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="AE" fr="Émirats Arabes Unis" en="United Arab Emirates">
+        <obligation id="ae_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="ae_reg" fr="Renouvellement immat." en="Registration Renewal" es="Renovación de registro" de="Zulassung" it="Rinnovo immatricolazione" pt="Renovação de registo" />
+        <obligation id="ae_other" fr="Autre" en="Other" es="Others" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="IN" fr="Inde" en="India">
+        <obligation id="in_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="in_puc" fr="Contrôle pollution (PUC)" en="Pollution Control (PUC)" es="Prueba de emisiones" de="Abgasuntersuchung" it="Controllo emissioni" pt="Teste de emissões" />
+        <obligation id="in_tax" fr="Taxe routière" en="Road Tax" es="Impuesto de circulación" de="Kraftfahrzeugsteuer" it="Tassa di circolazione" pt="Imposto rodoviário" />
+        <obligation id="in_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="ID" fr="Indonésie" en="Indonesia">
+        <obligation id="id_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="id_stnk" fr="Taxe véhicule (STNK)" en="Vehicle Tax (STNK)" es="Impuesto de vehículos" de="Kraftfahrzeugsteuer" it="Tassa veicolo" pt="Imposto de veículo" />
+        <obligation id="id_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="IL" fr="Israël" en="Israel">
+        <obligation id="il_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="il_test" fr="Contrôle technique (Test)" en="Annual Test" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção anual" />
+        <obligation id="il_reins" fr="Re-test technique" en="Re-test" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Re-teste" />
+        <obligation id="il_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="JP" fr="Japon" en="Japan">
+        <obligation id="jp_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="jp_shaken" fr="Contrôle technique (Shaken)" en="Technical Inspection" es="Inspección técnica" de="Shaken" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="jp_tax" fr="Taxe automobile" en="Automobile Tax" es="Impuesto de automóviles" de="Kraftfahrzeugsteuer" it="Tassa automobilistica" pt="Imposto automóvel" />
+        <obligation id="jp_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="jp_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="KR" fr="République de Corée" en="South Korea">
+        <obligation id="kr_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="kr_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="kr_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="kr_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="TH" fr="Thaïlande" en="Thailand">
+        <obligation id="th_ins" fr="Assurance (Por Ror Bor)" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro (Por Ror Bor)" />
+        <obligation id="th_tax" fr="Taxe annuelle" en="Annual Tax" es="Impuesto anual" de="Jährliche Steuer" it="Tassa annuale" pt="Imposto anual" />
+        <obligation id="th_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="TR" fr="Turquie" en="Turkey">
+        <obligation id="tr_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="tr_muay" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="tr_reins" fr="Muayene Tekrarı" en="Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="tr_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="VN" fr="Vietnam" en="Vietnam">
+        <obligation id="vn_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="vn_tech" fr="Contrôle technique" en="Technical Inspection" es="Inspección técnica" de="Hauptuntersuchung" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="vn_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="vn_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+
+    <!-- OCÉANIE -->
+    <country code="AU" fr="Australie" en="Australia">
+        <obligation id="au_ins" fr="Assurance CTP (Green Slip)" en="CTP Insurance" es="Seguro CTP" de="CTP-Versicherung" it="Assicurazione CTP" pt="Seguro CTP" />
+        <obligation id="au_reg" fr="Immatriculation (Rego)" en="Registration (Rego)" es="Registro" de="Zulassung" it="Immatricolazione" pt="Registo (Rego)" />
+        <obligation id="au_tech_p" fr="Inspection (Pink Slip)" en="Safety Check (Pink)" es="Inspección" de="Sicherheitsüberprüfung" it="Ispezione" pt="Inspeção de segurança" />
+        <obligation id="au_tech_b" fr="Contrôle identité (Blue Slip)" en="Design Check (Blue)" es="Control de identidad" de="Identitätsprüfung" it="Controllo identità" pt="Verificação de design" />
+        <obligation id="au_tax" fr="Taxe de timbre (Stamp Duty)" en="Stamp Duty" es="Impuesto de timbre" de="Stempelsteuer" it="Imposta di bollo" pt="Imposto de selo" />
+        <obligation id="au_reins" fr="Re-inspection technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="au_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+    <country code="NZ" fr="Nouvelle-Zélande" en="New Zealand">
+        <obligation id="nz_ins" fr="Assurance" en="Insurance" es="Seguro" de="Versicherung" it="Assicurazione" pt="Seguro" />
+        <obligation id="nz_rego" fr="Licence (Rego)" en="Licensing (Rego)" es="Licencia" de="Zulassung" it="Licenza" pt="Licença" />
+        <obligation id="nz_wof" fr="Contrôle technique (WoF)" en="Warrant of Fitness" es="Inspección técnica" de="Warrant of Fitness" it="Revisione" pt="Inspeção técnica" />
+        <obligation id="nz_reins" fr="Re-contrôle technique" en="Technical Re-inspection" es="Reinspección" de="Nachprüfung" it="Ripetizione" pt="Reinspeção" />
+        <obligation id="nz_other" fr="Autre" en="Other" es="Otros" de="Sonstiges" it="Altro" pt="Outro" />
+    </country>
+</jurisdictions>

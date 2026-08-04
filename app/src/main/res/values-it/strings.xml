@@ -1,0 +1,369 @@
+<resources>
+    <string name="app_name">Roadscript</string>
+
+    <!-- Root Categories -->
+    <string name="cat_service">Manutenzione</string>
+    <string name="cat_repair">Riparazione</string>
+    <string name="cat_legal">Obbligo</string>
+    <string name="cat_accessory">Accessorio</string>
+
+    <!-- Home Sections -->
+    <string name="section_mileage">Chilometraggio</string>
+    <string name="section_fuel">Carburante</string>
+    <string name="section_expenses">Spese</string>
+    <string name="section_history">Cronologia azioni</string>
+
+    <!-- Buttons and Actions -->
+    <string name="btn_add">Aggiungi</string>
+    <string name="btn_edit">Modifica</string>
+    <string name="btn_delete">Elimina</string>
+    <string name="btn_save">Salva</string>
+    <string name="btn_cancel">Annulla</string>
+    <string name="btn_validate">Convalida</string>
+    <string name="btn_reset">Ripristina</string>
+    <string name="btn_export">Export PDF</string>
+    <string name="btn_settings">Impostazioni</string>
+    <string name="btn_about">Informazioni</string>
+    <string name="btn_list">Elenco</string>
+    <string name="btn_chart">Grafico</string>
+    <string name="btn_stats">Statistiche</string>
+
+    <!-- Vehicle Profile -->
+    <string name="veh_profile">Profilo veicolo</string>
+    <string name="veh_model">Modello</string>
+    <string name="veh_brand">Marca</string>
+    <string name="veh_plate">Targa</string>
+    <string name="veh_vin">Numero di telaio / VIN</string>
+    <string name="veh_first_reg">Data prima immatr.</string>
+    <string name="veh_fuel_type">Alimentazione</string>
+    <string name="veh_power">Potenza</string>
+    <string name="veh_acquisition_date">Data acquisto</string>
+    <string name="veh_acquisition_km">Chilometri all\'acquisto</string>
+
+    <!-- Messages -->
+    <string name="msg_no_mileage">nessuna lettura</string>
+    <string name="msg_no_fuel">nessun rifornimento</string>
+    <string name="msg_no_expenses">nessuna spesa</string>
+    <string name="msg_operation_finished">Operazione completata!</string>
+    <string name="msg_please_wait">Generazione in corso… attendere</string>
+
+    <!-- Main Menu -->
+    <string name="menu_veh_info">Info Veicolo</string>
+    <string name="menu_mech_info">Info Officina</string>
+    <string name="menu_insur_info">Info Assicurazione</string>
+    <string name="menu_task_list">Elenco attività</string>
+    <string name="menu_import_export">Importa / Esporta</string>
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_about">Informazioni</string>
+    <string name="menu_export_pack">Export PDF</string>
+    <string name="menu_my_vehicles">I miei veicoli</string>
+
+    <!-- Filters -->
+    <string name="filter_title">Filtra cronologia</string>
+    <string name="filter_years">Anni</string>
+    <string name="filter_categories">Categorie</string>
+    <string name="msg_no_data">Nessun dato</string>
+
+    <!-- Vehicle Edit Screen -->
+    <string name="veh_admin_info">Informazioni amministrative</string>
+    <string name="veh_acquisition_info">Informazioni acquisto</string>
+    <string name="veh_documents">Documenti veicolo</string>
+    <string name="btn_save_info">Salva informazioni</string>
+    <string name="veh_model_req">Modello *</string>
+    <string name="veh_type">Carrozzeria</string>
+    <string name="veh_new_title">Registra il tuo veicolo</string>
+    <string name="btn_edit_label">Modifica etichetta</string>
+    <string name="label_doc_desc">Descrizione documento</string>
+    <string name="dialog_delete_doc_title">Elimina documento?</string>
+    <string name="dialog_delete_doc_msg">Sei sicuro di voler rimuovere questo documento?</string>
+    <string name="dialog_delete_veh_title">Eliminare %1$s?</string>
+    <string name="dialog_delete_veh_msg">Tutti i dati (KM, rifornimenti, eventi) e i documenti di questo veicolo verranno eliminati definitivamente.</string>
+
+    <!-- Fuel Types -->
+    <string name="fuel_gasoline">Benzina</string>
+    <string name="fuel_diesel">Diesel</string>
+    <string name="fuel_electric">Elettrica</string>
+    <string name="fuel_hybrid">Ibrida</string>
+    <string name="fuel_lpg">GPL</string>
+    <string name="fuel_other">Altro</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Aspetto</string>
+    <string name="settings_show_fuel">Mostra carburante</string>
+    <string name="settings_show_mileage">Mostra chilometri</string>
+    <string name="settings_home_page">Sulla pagina principale</string>
+    <string name="settings_default_years">Anni predefiniti</string>
+    <string name="settings_enable_multi_vehicle">Attiva la gestione multi-veicolo</string>
+    <string name="settings_multi_vehicle_desc">Gestisci più veicoli nella stessa app</string>
+    <string name="err_cannot_disable_multi_vehicle">Non è possibile disattivare la gestione multi-veicolo finché ci sono più veicoli dichiarati.</string>
+    <string name="err_last_vehicle">Devi avere almeno un veicolo nel tuo garage.</string>
+    <string name="settings_theme">Tema dell\'app</string>
+    <string name="settings_theme_desc">Colore principale</string>
+
+    <!-- Years -->
+    <string name="years_all">Tutti gli anni</string>
+    <string name="years_current">Anno corrente</string>
+    <string name="years_2">Ultimi 2 anni</string>
+    <string name="years_3">Ultimi 3 anni</string>
+    <string name="years_4">Ultimi 4 anni</string>
+    <string name="years_5">Ultimi 5 anni</string>
+
+    <!-- Events -->
+    <string name="action_details">Dettagli intervento</string>
+    <string name="action_name">Nome</string>
+    <string name="action_date">Data</string>
+    <string name="action_cost">Costo totale (%1$s)</string>
+    <string name="action_desc">Descrizione (opzionale)</string>
+    <string name="action_category">Categoria principale</string>
+    <string name="action_subcategory">Dettaglio</string>
+    <string name="action_is_multiple">Azioni multiple</string>
+    <string name="action_subactions_list">Elenco azioni</string>
+    <string name="action_subaction_name">Azione interna</string>
+    <string name="action_documents">Documenti (Foto, Ricevute)</string>
+    <string name="btn_add_subaction">Aggiungi azione interna</string>
+    <string name="action_add_title">Aggiungi evento</string>
+    <string name="action_edit_title">Modifica evento</string>
+    <string name="err_name_req">Nome obbligatorio.</string>
+    <string name="err_min_action">Aggiungi almeno un\'azione.</string>
+    <string name="msg_saved">Salvato!</string>
+    <string name="action_name_req">Nome evento *</string>
+    <string name="action_date_req">Data *</string>
+    <string name="action_root_cat_req">Categoria *</string>
+    <string name="action_root_sub_req">Sottocategoria *</string>
+    <string name="action_cost_total">Costo totale (%1$s)</string>
+    <string name="action_notes">Note</string>
+    <string name="action_ops_detail">Dettagli operazione</string>
+    <string name="action_label">Azione</string>
+    <string name="action_op_name">Nome operazione</string>
+    <string name="action_op_sub">Ambito</string>
+    <string name="btn_add_action">Aggiungi azione</string>
+
+    <!-- Statistics -->
+    <string name="expenses_title">Statistiche</string>
+    <string name="expenses_total">Spese totali</string>
+    <string name="period_label">Periodo:</string>
+    <string name="period_to">al</string>
+    <string name="dist_traveled">Distanza percorsa:</string>
+    <string name="split_by_post">Ripartizione</string>
+    <string name="fuel_vol_total">Volume totale</string>
+    <string name="fuel_avg_price">Prezzo medio</string>
+    <string name="fuel_count">N. rifornimenti</string>
+
+    <!-- Event Detail -->
+    <string name="action_detail_title">Dettagli</string>
+    <string name="dialog_delete_action_title">Elimina evento?</string>
+    <string name="dialog_delete_action_msg">Azione irreversibile.</string>
+    <string name="action_assoc_docs">Documenti associati</string>
+    <string name="msg_tap_to_open">Tocca per aprire</string>
+
+    <!-- About -->
+    <string name="about_title">Informazioni su Roadscript</string>
+    <string name="about_desc_long">Il tuo compagno di viaggio essenziale per gestire la cronologia del tuo veicolo. Traccia manutenzione, consumi e spese con facilità. Supporta backup sicuri tramite importazione ed esportazione.</string>
+    <string name="about_full_version">Sotto licenza GPLv3</string>
+    <string name="about_author">Autore: Christophe Savary (Smartoweb) + IA</string>
+    <string name="about_contact">Contatto: roadscript@smartoweb.com</string>
+    <string name="about_privacy">Privacy: Funziona localmente. Nessuna trasmissione dati. I tuoi dati restano tuoi.</string>
+    <string name="about_disclaimer">Questa applicazione è fornita \'così com\'è\', non sostituisce alcun documento ufficiale e come ogni programma informatico può presentare malfunzionamenti. Utilizzandola, l\'utente accetta la piena responsabilità per l\'uso che ne fa. La funzionalità di esportazione dei dati in essa contenuta è, eseguendola regolarmente, la migliore protezione contro la corruzione dei dati o il malfunzionamento dell\'applicazione che possono verificarsi.</string>
+    <string name="about_storage_path">Percorso dati:</string>
+
+    <!-- Backup & Restoration -->
+    <string name="ie_title">Backup e Ripristino</string>
+    <string name="ie_header">Gestisci il backup completo.</string>
+    <string name="ie_desc">L\'esportazione crea un ZIP con cronologia e foto. L\'importazione sostituirà i dati attuali.</string>
+    <string name="ie_btn_export">Esporta backup globale</string>
+    <string name="ie_btn_import">Importa backup globale</string>
+    <string name="ie_warning_title">⚠️ Rischio di perdita</string>
+    <string name="ie_warning_msg">L\'importazione sostituirà TUTTI i dati attuali.\n\nConsigliato backup preventivo.</string>
+    <string name="ie_btn_confirm_import">Ho capito, importa</string>
+    <string name="msg_export_success">Esportato!</string>
+    <string name="msg_import_success">Ripristinato!</string>
+    <string name="msg_error">Errore</string>
+    <string name="msg_read_error">Errore di lettura</string>
+    <string name="msg_write_error">Errore di scrittura</string>
+
+    <!-- Mechanic / Insurance -->
+    <string name="mech_title">Info officina</string>
+    <string name="mech_name">Nome</string>
+    <string name="mech_address">Indirizzo</string>
+    <string name="mech_phone">Telefono</string>
+    <string name="mech_email">E-mail</string>
+    <string name="mech_website">Sito web</string>
+    <string name="mech_cust_num">N. cliente</string>
+    <string name="mech_cont_num">N. contratto / Rif</string>
+    <string name="mech_documents">Documenti associati</string>
+    <string name="mech_logo_label">Logo / Foto</string>
+    <string name="mech_name_label">Nome officina</string>
+    <string name="mech_address_label">Indirizzo postale</string>
+    <string name="mech_cont_label">N. contratto</string>
+    <string name="mech_web_label">Sito web</string>
+    <string name="msg_mech_saved">Salvato</string>
+    <string name="insur_logo_label">Logo assicurazione</string>
+    <string name="insur_name_label">Nome assicurazione</string>
+    <string name="insur_cont_label">N. contratto</string>
+    <string name="insur_cust_label">N. cliente / socio</string>
+    <string name="msg_insur_saved">Salvato</string>
+
+    <!-- Mileage Readings -->
+    <string name="mileage_readings_title">Chilometri</string>
+    <string name="msg_no_mileage_recorded">Nessuna lettura.</string>
+    <string name="mileage_info_banner">Calcolato tra prima e ultima lettura.</string>
+    <string name="mileage_delete_title">Elimina lettura?</string>
+    <string name="mileage_delete_confirm">Elimina lettura del %1$s (%2$d km)?</string>
+    <string name="msg_mileage_deleted">Eliminata</string>
+    <string name="msg_mileage_updated">Aggiornata</string>
+    <string name="msg_mileage_added">Aggiunta</string>
+    <string name="mileage_add_title">Aggiungi lettura</string>
+    <string name="mileage_label">Chilometraggio (km)</string>
+    <string name="mileage_date_label">Data</string>
+    <string name="mileage_edit_title">Modifica lettura</string>
+    <string name="mileage_new_label">Nuovo valore</string>
+
+    <!-- Fuel History -->
+    <string name="fuel_history_title">Rifornimenti</string>
+    <string name="fuel_add_title">Aggiungi rifornimento</string>
+    <string name="fuel_liters_label">Litri</string>
+    <string name="fuel_cost_label">Importo (%1$s)</string>
+    <string name="fuel_date_label">Data</string>
+    <string name="fuel_edit_title">Modifica rifornimento</string>
+    <string name="fuel_delete_title">Elimina?</string>
+    <string name="fuel_delete_confirm">Elimina rifornimento del %1$s (%2$s L / %3$s %4$s)?</string>
+    <string name="msg_fuel_deleted">Eliminato</string>
+    <string name="msg_fuel_updated">Aggiornato</string>
+    <string name="msg_fuel_added">Aggiunto</string>
+
+    <!-- Categories -->
+    <string name="categories_title">Categorie</string>
+    <string name="category_add_title">Aggiungi categoria</string>
+    <string name="category_name_label">Nome</string>
+    <string name="category_desc_label">Descrizione</string>
+    <string name="subcategory_add_title">Aggiungi sottocategoria</string>
+    <string name="category_icon_label">Icona</string>
+    <string name="err_category_used">In uso, impossibile eliminare.</string>
+    <string name="cat_shared_domains">Domini condivisi</string>
+    <string name="cat_shared_domains_desc">L\'elenco delle attività è comune a tutti i veicoli, contiene le voci disponibili negli eventi di tipo Manutenzione o Riparazione.</string>
+    <string name="cat_shared_domains_desc_single">L\'elenco delle attività contiene le voci disponibili negli eventi di tipo Manutenzione o Riparazione.</string>
+    <string name="cat_system">Sistema</string>
+    <string name="cat_system_legend">Sistema (non modificable)</string>
+    <string name="cat_user">Utente</string>
+    <string name="cat_user_legend">Utente (tutte le operazioni)</string>
+    <string name="cat_btn_add">Aggiungi ambito</string>
+    <string name="cat_new_domain">Nuovo ambito</string>
+    <string name="cat_name_req">Nome *</string>
+    <string name="cat_desc_free">Descrizione</string>
+    <string name="cat_choose_icon">Scegli icona…</string>
+    <string name="msg_domain_added">Aggiunto!</string>
+    <string name="msg_domain_deleted">Eliminato</string>
+    <string name="cat_delete_title">Elimina ambito?</string>
+    <string name="cat_delete_confirm">Vuoi eliminare \'%1$s\'?</string>
+
+    <!-- Sub-categories names -->
+    <string name="sub_body">Carrozzeria</string>
+    <string name="sub_air_con">Clima e Riscaldamento</string>
+    <string name="sub_electric">Elettricità e Batteria</string>
+    <string name="sub_brakes">Freni</string>
+    <string name="sub_engine">Motore</string>
+    <string name="sub_tires">Pneumatici</string>
+    <string name="sub_lights">Luci e Visibilità</string>
+    <string name="sub_suspension">Sospensioni</string>
+    <string name="sub_transmission">Trasmissione e Sterzo</string>
+    <string name="sub_labor">Manodopera</string>
+    <string name="sub_consumables">Consumabili</string>
+    <string name="sub_other">Altro</string>
+    <string name="sub_inspection">Revisione ministeriale</string>
+    <string name="sub_reinspection">Ripetizione</string>
+    <string name="sub_insurance">Assicurazione</string>
+    <string name="sub_audio">Audio</string>
+    <string name="sub_comfort">Comfort</string>
+    <string name="sub_aesthetics">Pulizia</string>
+    <string name="sub_equipment">Equipaggiamento</string>
+
+    <!-- Category Descriptions -->
+    <string name="cat_service_desc">Manutenzione regolare</string>
+    <string name="cat_repair_desc">Riparazioni e guasti</string>
+    <string name="cat_legal_desc">Controlli di legge</string>
+    <string name="cat_accessory_desc">Accessori e comfort</string>
+
+    <!-- Internationalization & Settings UI -->
+    <string name="settings_language">Lingua dell\'applicazione</string>
+    <string name="settings_country">Paese</string>
+    <string name="lang_system">Sistema</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_de">Deutsch</string>
+    <string name="lang_it">Italiano</string>
+    <string name="settings_main_page">Pagina principale</string>
+    <string name="settings_international">Internazionalizzazione</string>
+    <string name="settings_misc">Varie</string>
+    <string name="dialog_country_change_title">Cambia paese</string>
+    <string name="dialog_country_change_msg">L\'elenco degli obblighi sarà sostituito da quello del paese selezionato.\nNessun dato esistente verrà eliminato.</string>
+    <string name="btn_continue">Continua</string>
+    <string name="settings_danger_zone">Zona di pericolo</string>
+    <string name="btn_delete_all">Elimina tutti i dati</string>
+    <string name="dialog_delete_all_title">Avviso importante</string>
+    <string name="dialog_delete_all_msg">Tutti i dati andranno persi! Consigliamo un backup preventivo.</string>
+    <string name="btn_go_to_export">Vai a esportazione</string>
+    <string name="about_edition">Edizione Open Source</string>
+    <string name="about_edition_free">Edizione Gratuita</string>
+    <string name="msg_new_vehicle_success_title">Nuovo veicolo creato</string>
+    <string name="msg_new_vehicle_success_body">La creazione del nuovo veicolo è stata completata; è stato impostato come veicolo corrente. Si prega di dedicare 5 minuti a compilare le informazioni sul veicolo, sull\'assicurazione e sull\'officina per iniziare bene.</string>
+    <string name="veh_theme_label">Tema dell\'app per questo veicolo</string>
+    <string name="err_freemium_limit">Limite raggiunto (10 eventi). Passa alla versione Pro!</string>
+    <string name="ie_truncated_warning_title">Versione Freemium</string>
+    <string name="ie_truncated_warning_msg">Verranno ripristinati solo 1 veicolo e i suoi primi 10 eventi, il resto andrà perso; Vuoi continuare?</string>
+    <string name="btn_upgrade_pro">Passa a Pro</string>
+
+    <string name="welcome_title">Benvenuti in Roadscript!</string>
+    <string name="welcome_msg">Per iniziare, la selezione del paese di utilizzo del veicolo è un passaggio essenziale. Questa scelta consente all\'applicazione di configurare automaticamente gli obblighi amministrativi e le scadenze legali specifiche per il tuo paese.\n\nUna volta completata questa configurazione, ti invitiamo vivamente a dedicare qualche istante per inserire le informazioni di base del tuo veicolo, del tuo assicuratore e della tua officina. Ciò ti consentirà di godere appieno di un libretto di manutenzione digitale preciso, personalizzato e perfettamente organizzato.</string>
+    <string name="btn_configure_country">Configura Paese</string>
+
+    <!-- Schermata Export Pack -->
+    <string name="export_pack_title">Export PDF</string>
+    <string name="export_profile_label">Destinazione dell\'esportazione</string>
+    <string name="export_profile_personal">Uso Personale (Completo)</string>
+    <string name="export_profile_personal_desc">Esportazione completa che include tutti i dati e i documenti per uso personale.</string>
+    <string name="export_profile_third_party">Per un terzo (Filtrato)</string>
+    <string name="export_profile_third_party_desc">Esportazione filtrata per la condivisione (vendita/esperto). I dati sensibili e i documenti amministrativi sono esclusi per proteggere la tua privacy.</string>
+    <string name="export_pack_intro_multi">L\'esportazione in PDF consente di ottenere un PDF riepilogativo dei dati del veicolo actuellement selezionato (informazioni sul veicolo, assicurazione, officina ed eventi), accompagnato da una cartella contenente i documenti associati ad esso.</string>
+    <string name="export_pack_intro_single">L\'esportazione in PDF consente di ottenere un PDF riepilogativo dei dati del veicolo (informazioni sul veicolo, assicurazione, officina ed eventi), accompagnato da una cartella contenente i documenti associati ad esso.</string>
+    <string name="export_pack_section_admin">Amministrativo</string>
+    <string name="export_pack_section_tech">Tecnico</string>
+    <string name="export_pack_section_history">Cronologia</string>
+    <string name="export_pack_item_veh">Informazioni veicolo</string>
+    <string name="export_pack_item_insur">Dettagli assicurazione</string>
+    <string name="export_pack_item_mech">Dettagli officina</string>
+    <string name="export_pack_item_mileage">Chilometraggio</string>
+    <string name="export_pack_item_fuel">Carburante</string>
+    <string name="export_pack_item_events">Elenco interventi</string>
+    <string name="export_pack_item_docs">Estrai documenti originali</string>
+    <string name="export_pack_item_stats">Statistiche di spesa</string>
+    <string name="export_pack_opt_mileage_last">Solo ultima lettura</string>
+    <string name="export_pack_opt_mileage_full">Cronologia completa + Grafico</string>
+    <string name="export_pack_opt_fuel_none">Non includere</string>
+    <string name="export_pack_opt_fuel_sum">Sintesi dei consumi</string>
+    <string name="export_pack_opt_fuel_full">Cronologia completa + Grafico</string>
+    <string name="export_pack_btn_generate">Genera cartella completa</string>
+    <string name="export_pack_disclaimer">L\'esportazione creerà una sottocartella contenente i tuoi documenti originali e aprirà l\'anteprima del rapporto.</string>
+
+    <!-- Rapporto PDF -->
+    <string name="pdf_report_title">%1$s: Rapporto di manutenzione</string>
+    <string name="pdf_generated_on">Generato il %1$s</string>
+    <string name="pdf_section_veh">Informazioni veicolo</string>
+    <string name="pdf_section_insur">Assicurazione</string>
+    <string name="pdf_section_mech">Officina abituale</string>
+    <string name="pdf_section_mileage">Chilometraggio</string>
+    <string name="pdf_section_fuel">Carburante</string>
+    <string name="pdf_section_history">Cronologia interventi</string>
+    <string name="pdf_section_annexes">Allegati</string>
+    <string name="pdf_label_model">Modello</string>
+    <string name="pdf_label_plate">Targa</string>
+    <string name="pdf_label_energy">Energia</string>
+    <string name="pdf_label_contract">Contratto</string>
+    <string name="pdf_label_last_reading">Ultima lettura</string>
+    <string name="pdf_label_vol_total">Volume totale</string>
+    <string name="pdf_col_date">Data</string>
+    <string name="pdf_col_action">Azione</string>
+    <string name="pdf_col_notes">Note</string>
+    <string name="pdf_col_cost">Costo</string>
+    <string name="pdf_on">il</string>
+</resources>
