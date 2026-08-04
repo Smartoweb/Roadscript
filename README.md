@@ -1,4 +1,4 @@
-# Roadscript 🚗
+# Roadscript 
 
 **Roadscript** est votre compagnon de route indispensable pour centraliser et gérer l'historique complet de votre véhicule. Cette application Android open-source vous permet de suivre vos interventions, d'archiver vos documents importants et de garder un œil précis sur votre carnet d'entretien numérique.
 
@@ -72,4 +72,4 @@ Ce projet est distribué sous licence **GNU GPLv3**. Vous êtes libre de l'utili
 
 ---
 
-*Développé avec ❤️ par Christophe Savary (Smartoweb) & AI.*
+*Développé par Christophe Savary (christophesavary[at]martoweb.com) & AI.*
