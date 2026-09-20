@@ -483,8 +483,8 @@ fun HomeScreen(
         AddFuelDialog(
             countryCode = vehicle?.countryCode ?: "",
             onDismiss = { showFuelDialog = false },
-            onConfirm = { date, liters, cost ->
-                viewModel.addFuelReading(date, liters, cost,
+            onConfirm = { date, liters, cost, odometer ->
+                viewModel.addFuelReading(date, liters, cost, odometer,
                     onSuccess = { showFuelDialog = false },
                     onError = { /* Gérer l'erreur */ }
                 )

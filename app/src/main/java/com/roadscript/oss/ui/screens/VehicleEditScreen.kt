@@ -2,6 +2,7 @@ package com.roadscript.oss.ui.screens
 
 import android.app.DatePickerDialog
 import android.widget.Toast
+import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
@@ -405,7 +406,10 @@ fun VehicleEditScreen(
                         tempPhotoFile = file
                         val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", file)
                         cameraLauncher.launch(uri)
-                    } catch (e: Exception) {}
+                    } catch (e: Exception) {
+                        Log.e("VehicleEdit", "Camera launch error", e)
+                        Toast.makeText(context, "Erreur appareil photo: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
                 } else permissionLauncher.launch(android.Manifest.permission.CAMERA)
             },
             onGallery = {
@@ -429,7 +433,10 @@ fun VehicleEditScreen(
                         tempPhotoFile = file
                         val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", file)
                         cameraGalleryLauncher.launch(uri)
-                    } catch (e: Exception) {}
+                    } catch (e: Exception) {
+                        Log.e("VehicleEdit", "Camera launch error", e)
+                        Toast.makeText(context, "Erreur appareil photo: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
                 } else permissionLauncher.launch(android.Manifest.permission.CAMERA)
             },
             onGallery = {

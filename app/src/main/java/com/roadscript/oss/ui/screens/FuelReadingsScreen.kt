@@ -4,7 +4,7 @@ import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -39,6 +39,7 @@ fun FuelReadingsScreen(
 ) {
     val context = LocalContext.current
     val fuelReadings by viewModel.fuelReadings.collectAsState()
+    val avgConsumption by viewModel.averageConsumption.collectAsState()
     val vehicle by viewModel.vehicle.collectAsState()
     val currency = CountryHelper.getCurrencySymbol(vehicle?.countryCode ?: "")
     
@@ -82,19 +83,43 @@ fun FuelReadingsScreen(
                         shape = RoundedCornerShape(12.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
                     ) {
-                        Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.Top) {
-                            Icon(Icons.Default.Info, null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(18.dp))
-                            Spacer(modifier = Modifier.width(10.dp))
-                            Text(
-                                text = "Les statistiques sont calculées sur l'intervalle compris entre la date du 1er relevé et la date du dernier. La consommation moyenne ne tient pas compte du volume du dernier plein.",
-                                fontSize = 12.sp, lineHeight = 16.sp, color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
+                        Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Box(
+                                modifier = Modifier.size(48.dp).background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f), CircleShape),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Icon(Icons.Default.Speed, null, tint = MaterialTheme.colorScheme.primary)
+                            }
+                            Spacer(modifier = Modifier.width(16.dp))
+                            Column {
+                                Text(
+                                    text = if (avgConsumption > 0) String.format(Locale.FRANCE, "%.2f L/100km", avgConsumption) else "-- L/100km",
+                                    style = MaterialTheme.typography.titleLarge,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.primary
+                                )
+                                Text(
+                                    text = "Consommation moyenne calculée sur ${fuelReadings.count { it.odometer != null }} relevés avec kilométrage.",
+                                    fontSize = 12.sp,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                            }
                         }
                     }
                 }
-                items(fuelReadings) { reading ->
+                itemsIndexed(fuelReadings) { index, reading ->
+                    // Calcul de la consommation du segment (entre ce plein et le précédent chronologiquement)
+                    val segmentConsumption = if (reading.odometer != null && index < fuelReadings.size - 1) {
+                        val previous = fuelReadings.subList(index + 1, fuelReadings.size).find { it.odometer != null }
+                        if (previous != null) {
+                            val dist = reading.odometer - previous.odometer!!
+                            if (dist > 0) (reading.liters / dist) * 100.0 else null
+                        } else null
+                    } else null
+
                     FuelItemCard(
                         reading = reading,
+                        segmentConsumption = segmentConsumption,
                         onEdit = { readingToEdit = reading },
                         onDelete = { readingToDelete = reading }
                     )
@@ -108,8 +133,8 @@ fun FuelReadingsScreen(
         AddFuelDialog(
             countryCode = vehicle?.countryCode ?: "",
             onDismiss = { showAddDialog = false },
-            onConfirm = { date, liters, cost ->
-                viewModel.addFuelReading(date, liters, cost,
+            onConfirm = { date, liters, cost, odometer ->
+                viewModel.addFuelReading(date, liters, cost, odometer,
                     onSuccess = { showAddDialog = false },
                     onError = { Toast.makeText(context, it, Toast.LENGTH_SHORT).show() }
                 )
@@ -122,8 +147,8 @@ fun FuelReadingsScreen(
             initialReading = readingToEdit!!,
             countryCode = vehicle?.countryCode ?: "",
             onDismiss = { readingToEdit = null },
-            onConfirm = { date, liters, cost ->
-                viewModel.updateFuelReading(readingToEdit!!, date, liters, cost,
+            onConfirm = { date, liters, cost, odometer ->
+                viewModel.updateFuelReading(readingToEdit!!, date, liters, cost, odometer,
                     onSuccess = { readingToEdit = null },
                     onError = { Toast.makeText(context, it, Toast.LENGTH_SHORT).show() }
                 )
@@ -136,7 +161,7 @@ fun FuelReadingsScreen(
             onDismissRequest = { readingToDelete = null },
             title = { Text(stringResource(R.string.fuel_delete_title)) },
             text = { 
-                Text(stringResource(R.string.fuel_delete_confirm, formatDateString(readingToDelete!!.date), String.format("%.2f", readingToDelete!!.liters), String.format("%.2f", readingToDelete!!.cost), currency)) 
+                Text(stringResource(R.string.fuel_delete_confirm, formatDateString(readingToDelete!!.date), String.format(Locale.FRANCE, "%.2f", readingToDelete!!.liters), String.format(Locale.FRANCE, "%.2f", readingToDelete!!.cost), currency)) 
             },
             confirmButton = {
                 TextButton(
@@ -162,9 +187,11 @@ fun FuelReadingsScreen(
 @Composable
 fun FuelItemCard(
     reading: FuelReading,
+    segmentConsumption: Double? = null,
     onEdit: () -> Unit,
     onDelete: () -> Unit
 ) {
+    val currency = CountryHelper.getCurrencySymbol(reading.countryCode ?: "")
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),
@@ -184,17 +211,28 @@ fun FuelItemCard(
             Spacer(modifier = Modifier.width(16.dp))
             
             Column(modifier = Modifier.weight(1f)) {
-                val itemCurrency = CountryHelper.getCurrencySymbol(reading.countryCode ?: "")
                 Text(
-                    text = "${String.format(Locale.FRANCE, "%.2f", reading.liters)} L - ${String.format(Locale.FRANCE, "%.2f", reading.cost)} $itemCurrency",
+                    text = "${String.format(Locale.FRANCE, "%.2f", reading.liters)} L - ${String.format(Locale.FRANCE, "%.2f", reading.cost)} $currency",
                     fontWeight = FontWeight.Bold,
                     fontSize = 16.sp
                 )
                 Text(
-                    text = "${formatDateString(reading.date)} (${String.format(Locale.FRANCE, "%.3f", reading.cost / reading.liters)} $itemCurrency/L)",
+                    text = buildString {
+                        append(formatDateString(reading.date))
+                        reading.odometer?.let { append(" • $it km") }
+                    },
                     fontSize = 13.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
+                
+                if (segmentConsumption != null) {
+                    Text(
+                        text = String.format(Locale.FRANCE, "📈 %.2f L/100km", segmentConsumption),
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
             }
             
             IconButton(onClick = onEdit) {

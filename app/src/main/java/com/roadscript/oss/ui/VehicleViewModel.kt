@@ -26,6 +26,29 @@ class VehicleViewModel(val repository: VehicleRepository) : ViewModel() {
     val garage: StateFlow<List<Vehicle>> = repository.garage
     val activeVehicleId: StateFlow<String> = repository.activeVehicleId
 
+    // Consommation moyenne calculée (L/100km)
+    val averageConsumption: StateFlow<Double> = fuelReadings
+        .map { readings ->
+            if (readings.size < 2) return@map 0.0
+            
+            val sorted = readings.filter { it.odometer != null }.sortedBy { it.date }
+            if (sorted.size < 2) return@map 0.0
+            
+            val firstKm = sorted.first().odometer!!
+            val lastKm = sorted.last().odometer!!
+            val distance = lastKm - firstKm
+            
+            if (distance <= 0) return@map 0.0
+            
+            // On somme tous les litres SAUF le dernier (ou le premier selon la logique de plein complet)
+            // Logique standard : Somme des litres des pleins qui ont permis de parcourir la distance.
+            // Ici on prend la somme de tous les pleins sauf le tout premier du segment.
+            val totalLiters = sorted.drop(1).sumOf { it.liters }
+            
+            (totalLiters / distance) * 100.0
+        }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), 0.0)
+
     // Exposer le dernier relevé kilométrique (le premier de la liste triée DESC)
     val latestMileage: StateFlow<MileageReading?> = mileageReadings
         .map { it.firstOrNull() }
@@ -396,11 +419,11 @@ class VehicleViewModel(val repository: VehicleRepository) : ViewModel() {
     // CRUD CARBURANT
     // ==========================================
 
-    fun addFuelReading(date: String, liters: Double, cost: Double, onSuccess: () -> Unit, onError: (String) -> Unit) {
+    fun addFuelReading(date: String, liters: Double, cost: Double, odometer: Int?, onSuccess: () -> Unit, onError: (String) -> Unit) {
         viewModelScope.launch {
             try {
                 val currentCountry = repository.vehicle.value?.countryCode
-                repository.addFuelReading(FuelReading(date, liters, cost, currentCountry))
+                repository.addFuelReading(FuelReading(date, liters, cost, odometer, currentCountry))
                 onSuccess()
             } catch (e: Exception) {
                 onError(e.message ?: "Erreur lors de l'ajout du plein.")
@@ -419,10 +442,10 @@ class VehicleViewModel(val repository: VehicleRepository) : ViewModel() {
         }
     }
 
-    fun updateFuelReading(oldReading: FuelReading, date: String, liters: Double, cost: Double, onSuccess: () -> Unit, onError: (String) -> Unit) {
+    fun updateFuelReading(oldReading: FuelReading, date: String, liters: Double, cost: Double, odometer: Int?, onSuccess: () -> Unit, onError: (String) -> Unit) {
         viewModelScope.launch {
             try {
-                repository.updateFuelReading(oldReading, FuelReading(date, liters, cost))
+                repository.updateFuelReading(oldReading, FuelReading(date, liters, cost, odometer, oldReading.countryCode))
                 onSuccess()
             } catch (e: Exception) {
                 onError(e.message ?: "Erreur lors de la modification du plein.")

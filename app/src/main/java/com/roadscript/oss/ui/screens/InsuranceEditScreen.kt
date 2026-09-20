@@ -2,6 +2,7 @@ package com.roadscript.oss.ui.screens
 
 import android.net.Uri
 import android.widget.Toast
+import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
@@ -308,7 +309,10 @@ fun InsuranceEditScreen(
                         tempPhotoFile = file
                         val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", file)
                         logoCameraLauncher.launch(uri)
-                    } catch (e: Exception) {}
+                    } catch (e: Exception) {
+                        Log.e("InsuranceEdit", "Logo camera launch error", e)
+                        Toast.makeText(context, "Erreur appareil photo: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
                 } else permissionLauncher.launch(android.Manifest.permission.CAMERA)
             },
             onGallery = {
@@ -332,7 +336,10 @@ fun InsuranceEditScreen(
                         tempPhotoFile = file
                         val uri = FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", file)
                         galleryCameraLauncher.launch(uri)
-                    } catch (e: Exception) {}
+                    } catch (e: Exception) {
+                        Log.e("InsuranceEdit", "Gallery camera launch error", e)
+                        Toast.makeText(context, "Erreur appareil photo: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
                 } else permissionLauncher.launch(android.Manifest.permission.CAMERA)
             },
             onGallery = {

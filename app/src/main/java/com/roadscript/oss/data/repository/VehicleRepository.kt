@@ -327,26 +327,27 @@ class VehicleRepository(private val context: Context) {
     }
 
     private fun saveSuiviAtomically(veh: Vehicle?, km: List<MileageReading>, evts: List<Evenement>, fuel: List<FuelReading>) {
-        if (veh == null) return
-        val vehicleId = veh.id
+        // Si le véhicule est nul, on utilise un objet par défaut avec l'ID actif
+        val finalVeh = veh ?: Vehicle(id = _activeVehicleId.value)
+        val vehicleId = finalVeh.id
         val targetFile = getVehicleFile(vehicleId)
         val tempFile = File(context.filesDir, "vehicle_$vehicleId.xml.tmp")
         
         try {
             FileOutputStream(tempFile).use { fos ->
-                XmlDataParser.writeSuivi(fos, veh, km, evts, fuel)
+                XmlDataParser.writeSuivi(fos, finalVeh, km, evts, fuel)
             }
             if (tempFile.renameTo(targetFile)) {
                 // On ne met à jour l'état que si c'est le véhicule actif
                 if (vehicleId == _activeVehicleId.value) {
-                    _vehicle.value = veh
-                    _currentTheme.value = veh.themeKey
+                    _vehicle.value = finalVeh
+                    _currentTheme.value = finalVeh.themeKey
                     _mileageReadings.value = km.sortedByDescending { it.date }
                     _evenements.value = evts.sortedByDescending { it.date }
                     _fuelReadings.value = fuel.sortedByDescending { it.date }
                     
                     // Synchroniser les obligations si le pays a changé
-                    veh.countryCode.let { syncJurisdictionObligations(it) }
+                    finalVeh.countryCode.let { syncJurisdictionObligations(it) }
                 }
                 // Dans tous les cas, on rafraîchit le garage pour les miniatures
                 refreshGarage()
@@ -630,8 +631,22 @@ class VehicleRepository(private val context: Context) {
     }
 
     fun addFuelReading(reading: FuelReading) {
-        val newList = _fuelReadings.value + reading
-        saveSuiviAtomically(_vehicle.value, _mileageReadings.value, _evenements.value, newList)
+        val newFuelList = _fuelReadings.value + reading
+        var newMileageList = _mileageReadings.value
+        
+        // Synchronisation : si un kilométrage est renseigné, on l'ajoute aussi à la liste
+        reading.odometer?.let { kmValue ->
+            val existingIndex = newMileageList.indexOfFirst { it.date == reading.date }
+            val mileageReading = MileageReading(reading.date, kmValue)
+            newMileageList = if (existingIndex != -1) {
+                newMileageList.mapIndexed { idx, it -> if (idx == existingIndex) mileageReading else it }
+            } else {
+                newMileageList + mileageReading
+            }
+        }
+        
+        // On sauvegarde tout en une seule opération atomique
+        saveSuiviAtomically(_vehicle.value, newMileageList, _evenements.value, newFuelList)
     }
 
     fun deleteFuelReading(date: String, liters: Double) {
@@ -640,8 +655,21 @@ class VehicleRepository(private val context: Context) {
     }
 
     fun updateFuelReading(oldReading: FuelReading, newReading: FuelReading) {
-        val newList = _fuelReadings.value.map { if (it == oldReading) newReading else it }
-        saveSuiviAtomically(_vehicle.value, _mileageReadings.value, _evenements.value, newList)
+        val newFuelList = _fuelReadings.value.map { if (it == oldReading) newReading else it }
+        var newMileageList = _mileageReadings.value
+
+        // Synchronisation lors de la mise à jour
+        newReading.odometer?.let { kmValue ->
+            val existingIndex = newMileageList.indexOfFirst { it.date == newReading.date }
+            val mileageReading = MileageReading(newReading.date, kmValue)
+            newMileageList = if (existingIndex != -1) {
+                newMileageList.mapIndexed { idx, it -> if (idx == existingIndex) mileageReading else it }
+            } else {
+                newMileageList + mileageReading
+            }
+        }
+        
+        saveSuiviAtomically(_vehicle.value, newMileageList, _evenements.value, newFuelList)
     }
 
     fun deleteVehicle(vehicleId: String) {

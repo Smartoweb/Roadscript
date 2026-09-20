@@ -47,6 +47,7 @@ fun ExpensesScreen(
 ) {
     val evenements by viewModel.evenements.collectAsState()
     val fuelReadings by viewModel.fuelReadings.collectAsState()
+    val avgConsumption by viewModel.averageConsumption.collectAsState()
     val mileageHistory by viewModel.mileageReadings.collectAsState()
     val categories by viewModel.categories.collectAsState()
     val subCategories by viewModel.subCategories.collectAsState()
@@ -216,6 +217,9 @@ fun ExpensesScreen(
                                 Column(modifier = Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                                     DetailRow(stringResource(R.string.fuel_vol_total), String.format(Locale.FRANCE, "%,.1f L", fuelLiters))
                                     DetailRow(stringResource(R.string.fuel_avg_price), String.format(Locale.FRANCE, "%,3f $symbol/L", if (fuelLiters > 0) fuelCost / fuelLiters else 0.0))
+                                    if (avgConsumption > 0) {
+                                        DetailRow("Consommation moyenne", String.format(Locale.FRANCE, "%.2f L/100km", avgConsumption))
+                                    }
                                     DetailRow(stringResource(R.string.fuel_count), readings.size.toString())
                                 }
                             }

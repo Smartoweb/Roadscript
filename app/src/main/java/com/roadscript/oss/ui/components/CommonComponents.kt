@@ -355,11 +355,12 @@ fun EditMileageDialog(
 fun AddFuelDialog(
     countryCode: String,
     onDismiss: () -> Unit,
-    onConfirm: (String, Double, Double) -> Unit
+    onConfirm: (String, Double, Double, Int?) -> Unit
 ) {
     val currency = CountryHelper.getCurrencySymbol(countryCode)
     var litersStr by remember { mutableStateOf("") }
     var costStr by remember { mutableStateOf("") }
+    var odometerStr by remember { mutableStateOf("") }
     val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
     var dateStr by remember { mutableStateOf(sdf.format(Date())) }
     val context = LocalContext.current
@@ -386,6 +387,15 @@ fun AddFuelDialog(
                     modifier = Modifier.fillMaxWidth()
                 )
                 OutlinedTextField(
+                    value = odometerStr,
+                    onValueChange = { if (it.isEmpty() || it.all { c -> c.isDigit() }) odometerStr = it },
+                    label = { Text("Kilométrage (optionnel)") },
+                    placeholder = { Text("Ex: 45200") },
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
                     value = formatDateString(dateStr),
                     onValueChange = {},
                     label = { Text("Date du plein") },
@@ -409,7 +419,8 @@ fun AddFuelDialog(
                 onClick = {
                     val l = litersStr.toDoubleOrNull() ?: 0.0
                     val c = costStr.toDoubleOrNull() ?: 0.0
-                    if (l > 0 && c > 0) onConfirm(dateStr, l, c)
+                    val o = odometerStr.toIntOrNull()
+                    if (l > 0 && c > 0) onConfirm(dateStr, l, c, o)
                 },
                 enabled = litersStr.isNotEmpty() && costStr.isNotEmpty()
             ) { Text("Enregistrer") }
@@ -423,11 +434,12 @@ fun EditFuelDialog(
     initialReading: FuelReading,
     countryCode: String,
     onDismiss: () -> Unit,
-    onConfirm: (String, Double, Double) -> Unit
+    onConfirm: (String, Double, Double, Int?) -> Unit
 ) {
     val currency = CountryHelper.getCurrencySymbol(countryCode)
     var litersStr by remember { mutableStateOf(initialReading.liters.toString()) }
     var costStr by remember { mutableStateOf(initialReading.cost.toString()) }
+    var odometerStr by remember { mutableStateOf(initialReading.odometer?.toString() ?: "") }
     var dateStr by remember { mutableStateOf(initialReading.date) }
     val context = LocalContext.current
     val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
@@ -454,6 +466,15 @@ fun EditFuelDialog(
                     modifier = Modifier.fillMaxWidth()
                 )
                 OutlinedTextField(
+                    value = odometerStr,
+                    onValueChange = { if (it.isEmpty() || it.all { c -> c.isDigit() }) odometerStr = it },
+                    label = { Text("Kilométrage (optionnel)") },
+                    placeholder = { Text("Ex: 45200") },
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
                     value = formatDateString(dateStr),
                     onValueChange = {},
                     label = { Text("Date du plein") },
@@ -477,7 +498,8 @@ fun EditFuelDialog(
                 onClick = {
                     val l = litersStr.toDoubleOrNull() ?: 0.0
                     val c = costStr.toDoubleOrNull() ?: 0.0
-                    if (l > 0 && c > 0) onConfirm(dateStr, l, c)
+                    val o = odometerStr.toIntOrNull()
+                    if (l > 0 && c > 0) onConfirm(dateStr, l, c, o)
                 },
                 enabled = litersStr.isNotEmpty() && costStr.isNotEmpty()
             ) { Text("Enregistrer") }

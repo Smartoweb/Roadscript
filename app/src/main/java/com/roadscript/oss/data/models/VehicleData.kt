@@ -67,6 +67,7 @@ data class FuelReading(
     val date: String, // YYYY-MM-DD
     val liters: Double,
     val cost: Double,
+    val odometer: Int? = null, // Kilométrage au moment du plein (optionnel)
     val countryCode: String? = null
 ) : Parcelable
 

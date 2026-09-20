@@ -254,8 +254,20 @@ object XmlDataParser {
             }
         }
 
-        // Carburant
-        val fuelContainer = root.getElementsByTagName("carburant").item(0) as? Element
+        // Carburant (Relevés) - Avec récupération automatique de l'ancien format
+        var fuelContainer = root.getElementsByTagName("historique_carburant").item(0) as? Element
+        if (fuelContainer == null) {
+            // Si le nouveau tag n'existe pas, on cherche dans les anciens tags "carburant"
+            // (on ignore celui qui contient juste le texte du type de carburant)
+            val potentialNodes = root.getElementsByTagName("carburant")
+            for (i in 0 until potentialNodes.length) {
+                val node = potentialNodes.item(i) as Element
+                if (node.getElementsByTagName("plein").length > 0) {
+                    fuelContainer = node
+                    break
+                }
+            }
+        }
         if (fuelContainer != null) {
             val pleinNodes = fuelContainer.getElementsByTagName("plein")
             for (i in 0 until pleinNodes.length) {
@@ -263,9 +275,10 @@ object XmlDataParser {
                 val date = element.getAttribute("date")
                 val litres = element.getAttribute("litres").toDoubleOrNull() ?: 0.0
                 val cout = element.getAttribute("cout").toDoubleOrNull() ?: 0.0
+                val odometer = element.getAttribute("odometer").takeIf { it.isNotBlank() }?.toIntOrNull()
                 val fCountry = element.getAttribute("country").takeIf { it.isNotBlank() }
                 if (date.isNotBlank()) {
-                    fuelList.add(FuelReading(date, litres, cout, fCountry))
+                    fuelList.add(FuelReading(date, litres, cout, odometer, fCountry))
                 }
             }
         }
@@ -419,12 +432,13 @@ object XmlDataParser {
         }
         root.appendChild(kmRoot)
 
-        val fuelRoot = doc.createElement("carburant")
+        val fuelRoot = doc.createElement("historique_carburant")
         for (f in fuel) {
             val p = doc.createElement("plein")
             p.setAttribute("date", f.date)
             p.setAttribute("litres", f.liters.toString())
             p.setAttribute("cout", f.cost.toString())
+            f.odometer?.let { p.setAttribute("odometer", it.toString()) }
             if (!f.countryCode.isNullOrBlank()) {
                 p.setAttribute("country", f.countryCode)
             }
