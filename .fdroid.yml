@@ -1,5 +1,5 @@
 Categories:
-  - Transport
+  - Navigation
 License: GPL-3.0-only
 AuthorName: Christophe Savary
 AuthorEmail: christophesavary@martoweb.com
@@ -27,6 +27,9 @@ Builds:
     sudo: apt-get update && apt-get install -y openjdk-21-jdk
     gradle:
       - yes
+
+AllowedAPKSigningKeys:
+  - debdc2d9aa1ad95ab25ff74c5bbe7c431568fb4f431895c09a4a0dfe30a0cf58
 
 Binaries: https://github.com/Smartoweb/Roadscript/releases/download/v1.0/Roadscript.apk
 
