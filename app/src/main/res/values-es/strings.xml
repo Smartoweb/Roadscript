@@ -314,6 +314,10 @@
     <string name="ie_truncated_warning_msg">Solo se restaurará 1 vehículo y ses primeros 10 eventos, el resto se perderá; ¿Quieres continuar?</string>
     <string name="btn_upgrade_pro">Pasar a Pro</string>
 
+    <string name="welcome_title">¡Bienvenido a Roadscript!</string>
+    <string name="welcome_msg">Para empezar, seleccionar el país de uso de su vehículo es un paso esencial. Esta elección permite que la aplicación configure automáticamente las obligaciones administrativas y los plazos legales específicos de su país.\n\nUna vez completada esta configuración, le recomendamos encarecidamente que se tome unos momentos para introducir la información básica de su vehículo, su aseguradora y su taller. Esto le permitirá disfrutar plenamente de un libro de mantenimiento digital preciso, personalizado y perfectamente organizado.</string>
+    <string name="btn_configure_country">Configurar país</string>
+
     <!-- Pantalla Export Pack -->
     <string name="export_pack_title">Export PDF</string>
     <string name="export_profile_label">Destino de la exportación</string>
