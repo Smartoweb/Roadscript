@@ -1,0 +1,42 @@
+AuthorName: Christophe Savary
+AuthorEmail: christophesavary@martoweb.com
+AuthorWebSite: https://martoweb.com
+Categories:
+  - Transport
+License: GPL-3.0-only
+SourceCode: https://github.com/Smartoweb/Roadscript
+IssueTracker: https://github.com/Smartoweb/Roadscript/issues
+
+AutoName: Roadscript
+Summary: Suivez l'entretien et la consommation de votre véhicule
+Description: |-
+  Roadscript est votre compagnon de route indispensable pour centraliser et
+  gérer l'historique complet de votre véhicule. Cette application Android
+  open-source vous permet de suivre vos interventions, d'archiver vos
+  documents importants et de garder un œil précis sur votre carnet
+  d'entretien numérique.
+
+RepoType: git
+Repo: https://github.com/Smartoweb/Roadscript.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 1cc93357c3216059502776d13999e343a857ece6
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-21-jdk
+    java: openjdk-21
+    gradle:
+      - yes
+
+AllowedAPKSIgningKeys:
+  - ""
+
+Binaries: https://github.com/Smartoweb/Roadscript/releases/download/v1.0/Roadscript.apk
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
