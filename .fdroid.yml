@@ -1,9 +1,9 @@
-AuthorName: Christophe Savary
-AuthorEmail: christophesavary@martoweb.com
-AuthorWebSite: https://martoweb.com
 Categories:
   - Transport
 License: GPL-3.0-only
+AuthorName: Christophe Savary
+AuthorEmail: christophesavary@martoweb.com
+WebSite: https://martoweb.com
 SourceCode: https://github.com/Smartoweb/Roadscript
 IssueTracker: https://github.com/Smartoweb/Roadscript/issues
 
@@ -22,7 +22,7 @@ Repo: https://github.com/Smartoweb/Roadscript.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 761a6c53bf5fab8dba63d0138d8516c47270a88a
+    commit: v1.0
     subdir: app
     sudo:
       - apt-get update
@@ -30,9 +30,6 @@ Builds:
     java: openjdk-21
     gradle:
       - yes
-
-AllowedAPKSIgningKeys:
-  - ""
 
 Binaries: https://github.com/Smartoweb/Roadscript/releases/download/v1.0/Roadscript.apk
 
