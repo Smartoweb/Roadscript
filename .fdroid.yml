@@ -22,7 +22,7 @@ Repo: https://github.com/Smartoweb/Roadscript.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 8c3d75f2913a8ea369d3d703e8fc6a140b27bd8d
+    commit: 761a6c53bf5fab8dba63d0138d8516c47270a88a
     subdir: app
     sudo:
       - apt-get update
