@@ -8,13 +8,12 @@ SourceCode: https://github.com/Smartoweb/Roadscript
 IssueTracker: https://github.com/Smartoweb/Roadscript/issues
 
 AutoName: Roadscript
-Summary: Suivez l'entretien et la consommation de votre véhicule
+Summary: Track vehicle maintenance and fuel efficiency
 Description: |-
-  Roadscript est votre compagnon de route indispensable pour centraliser et
-  gérer l'historique complet de votre véhicule. Cette application Android
-  open-source vous permet de suivre vos interventions, d'archiver vos
-  documents importants et de garder un œil précis sur votre carnet
-  d'entretien numérique.
+  Roadscript is your essential companion to centralize and manage your
+  vehicle's complete history. This open-source Android app allows you to
+  track maintenance interventions, archive official documents, and keep a
+  digital logbook.
 
 RepoType: git
 Repo: https://github.com/Smartoweb/Roadscript.git
